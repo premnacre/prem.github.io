@@ -1,0 +1,25 @@
+<apex:page controller="account_contact" >
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Congratulations</h1>
+  This is your new Page
+  <!-- End Default Content REMOVE THIS -->
+    
+    
+  
+  
+   <!--<apex:dataTable value="{!allDataAcc}" var="data" border="1">
+      <apex:column value="{!data.name}"/>
+       <apex:column value="{!data.Phone}"  width="30%"/>
+ <!-- <apex:column value="{!data.mobilePhone}"/> 
+  </apex:dataTable>-->
+   
+ <apex:panelgrid columns="2" id="panel">
+  <apex:repeat value="{!allDataAcc}" var="data" >
+      <apex:outputText value="{!data.name}" ></apex:outputText>
+          <!--  <apex:outputText value="{!data.Contact.Lastname}"></apex:outputText>   -->
+      <apex:outputText value="{!data.Phone}"></apex:outputText><br/>
+  </apex:repeat>
+  
+   </apex:panelgrid>
+  
+</apex:page>

@@ -1,0 +1,7 @@
+<apex:page standardController='Project__c'>
+	<h1> Welcome to this page, I have created it from eclipse</h1>
+	<apex:dataTable>
+
+	</apex:dataTable>
+	
+</apex:page>

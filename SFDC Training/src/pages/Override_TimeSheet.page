@@ -1,0 +1,10 @@
+<apex:page standardController="Time_Sheet__c">
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Congratulations</h1>
+  You have successfully overrided Timesheet new button
+  <!-- End Default Content REMOVE THIS -->
+
+   {!Time_Sheet__c.id}
+  <apex:detail relatedList="false"/>
+  
+</apex:page>

@@ -1,0 +1,6 @@
+<apex:page controller="pageReferenceTest">
+    <apex:form >
+    <apex:commandButton action="{!gotoPage}" value="Go" status="stat" reRender="none"/>
+	<apex:actionStatus startText="redirecting..." id="stat"/>
+    </apex:form>
+</apex:page>

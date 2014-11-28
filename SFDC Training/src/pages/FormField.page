@@ -1,0 +1,24 @@
+<apex:page showHeader="false" sidebar="False" controller="textInputCon" >
+<apex:pageBlock title="Hello {!inputText1} {!inputText2}" >
+     <font color="red"> <apex:outputText value="{!message}"></apex:outputText></font>
+<apex:form >
+   Input Organization Name <apex:inputText value="{!inputText0}"/><br/>
+   Input First Name <apex:inputText value="{!inputText1}"/>
+   Input Last Name <apex:inputText value="{!inputText2}"/><br/>
+   <apex:commandButton value="save" action="{!saveList}" onclick="return validate()"/><br/>
+</apex:form>
+<script language="javascript">
+    function validate(){
+        alert("hello");
+        return true;
+        }
+</script>
+   <br/>
+ All data available in test field display below
+   <apex:dataTable value="{!allData}" var="data" border="1">
+        <apex:column value="{!data.name}"/>
+        <apex:column value="{!data.Text1__c}"/>
+        <apex:column value="{!data.Text2__c}"/>
+   </apex:dataTable>
+</apex:pageBlock>
+</apex:page>

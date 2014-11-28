@@ -1,0 +1,4 @@
+<apex:page standardController="Project__c">
+  
+  This is From Server testing and eclipse
+</apex:page>

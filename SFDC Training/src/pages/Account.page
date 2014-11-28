@@ -1,0 +1,4 @@
+<apex:page standardController="Account" tabStyle="account">
+   hi<apex:outputText value="{!Account.Name}"></apex:outputText>
+<apex:detail />
+</apex:page>

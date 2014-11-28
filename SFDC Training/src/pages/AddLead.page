@@ -1,0 +1,14 @@
+<apex:page controller="add_leadAcc"  rendered="true" >
+ <!-- Begin Default Content REMOVE THIS -->
+  <h1>Click addLead to create lead</h1>
+  <!-- End Default Content REMOVE THIS -->
+  <apex:form >
+      <apex:pageblock >
+          <apex:pageBlockButtons >
+              <apex:commandbutton value="addLead" action="{!addAllLeadAcc}" />
+              <apex:commandbutton value="DeleteLead" action="{!removeRecord}"/>
+              <apex:outputText value="{!message}"></apex:outputText>
+          </apex:pageBlockButtons>
+     </apex:pageblock>     
+  </apex:form>  
+</apex:page>
